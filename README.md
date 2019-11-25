@@ -1,58 +1,57 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Challenge Template
+# Fizz Buzz Documentation Challenge
 
-Use this template to structure your READMEs for diagnostics.
-
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+We're going to build a common programming game, Fizz Buzz. For this challenge,
+you are only allowed to use the Python documentation!
 
 ## Prerequisites
 
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
--   In a challenge, it is useful to link to reference material, such as talk
-    repositories.
+- Another programming language
 
 ## Instructions
 
 1.  Fork and clone this repository.
 1.  Change into the new directory.
-1.  Install dependencies.
-1.  Create and checkout a new branch to work on.
 1.  Fulfill the listed requirements.
 
-Starter code is available in [`lib/challenge.js`](lib/challenge.js). A pull
+Starter code is available in [`lib/challenge.py`](lib/challenge.py). A pull
 request is not required, but it is necessary if you want a code review.
-
-You may wish to refer to [FAQs](https://github.com/ga-wdi-boston/meta/wiki/)
-related to [forking,
-cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone).
 
 ## Requirements
 
-Describe behavioral requirements as you'll be using them in tests. That is,
-list requirements in language that describes how the written code will be used,
-not how it will be written, with the exception of constraints you may wish to
-place on implementation. It's a good idea to include the below paragraph
-verbatim.
+Implement Fizz Buzz, up to 100, in the `challenge.py` file provided.
 
-You should be running `grunt nag` before diagnosing any bugs, since it finds
-some of the most common sources of errors. After `grunt nag` passes, you should
-run `grunt test` to run the included tests. Tests will tell you whether of not
-you've met these requirements.
+Fizz Buzz works by counting from 0 up to a certain number (in this case 100).
+For each number:
+
+* If the number is evenly divisible by 3, print `fizz`
+* If the number is evenly divisible by 5, print `buzz`
+* If the number is evenly divisible by both 3 and 5, print `fizzbuzz`
+* Otherwise, just print the number
+
+### Documentation
+
+For this exercise, you are only allowed to use the [Python
+documentation](https://docs.python.org/3/index.html). That means no Google,
+Stack Overflow or any other website.
+
+This exercise is going to be challenging, but if you find it frustrating then
+you need to rethink your approach. The point is to show you that programming is
+independent of any programming language. Once you know programmatic thinking,
+building something in another programming language is mostly a matter of
+learning the new language's syntax.
+
+### Extra
+
+- You can execute a python file with `python3 /path/to/file.py`
+- ***Pseudocode***
 
 ## Bonus
 
-Bonuses are described after the requirements, if included. They should be worked
-on **only after** passing requirements.
-
-Sometimes, we ask questions that promote thinking critically about code.
+Make it so a user can pass in a number as an argument and have your program run
+up to that number. So if I run `python3 lib/challenge.py 1000`, your program
+will run Fizz Buzz up to 1000.
 
 ## [License](LICENSE)
 
